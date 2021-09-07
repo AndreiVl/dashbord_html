@@ -81,7 +81,13 @@ input[type="radio"].visually-hidden {
 	padding-bottom: 40px;
 
 	/* 4 Visual */
-	background-color: #FFFFFF;
+	background-color: #ffffff;
+}
+.intro-page__top {
+	/* 2 Block model */
+	display: flex;
+	justify-content: center;
+	margin-bottom: 40px;
 }
 .intro-page__list {
 	/* 2 Block model */
@@ -119,7 +125,7 @@ input[type="radio"].visually-hidden {
 }
 .intro-page__item a:hover {
 	/* 3 Typography */
-	color: #FFFFFF;
+	color: #ffffff;
 
 	/* 4 Visual */
 	cursor: pointer;
