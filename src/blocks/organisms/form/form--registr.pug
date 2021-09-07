@@ -1,0 +1,19 @@
+div.form.form--registr
+	form.form__form(action="#" method="post")
+		div.form__item
+			h3.h3 Register
+			p.text Create New Dashlite Account
+		div.form__item
+			+input({label_text: 'Name', type: 'text', name: 'login', placeholder: 'Enter your name'})(class="input--border")
+		div.form__item
+			+input({label_text: 'Email or Username', type: 'text', name: 'name_email', placeholder: 'Enter your email address or username'})(class="input--border")
+		div.form__item-big
+			+input({label_text: 'Password', type: 'password', name: 'password_1', placeholder: 'Enter your password'})(class="input--border")
+		div.form__item.form__checkbox
+			+checkbox({name: 'accept'})
+			p.text I agree to Dashlite 
+				a.link(href="#" target="_blank") Privacy Policy
+				|  & 
+				a.link(href="#" target="_blank") Terms
+		div.form__item-big
+			+btn({text: 'Register', type: 'submit'})(class="btn--block")

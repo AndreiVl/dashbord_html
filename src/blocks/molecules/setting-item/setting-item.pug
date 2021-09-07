@@ -1,0 +1,11 @@
+mixin setting-item(data)
+	div.setting-item(class!=attributes.class)
+		div.setting-item__left
+			span.setting-item__title.h3.h3--gray!=data.title
+			span.setting-item__info.h3.h3--gray!=data.info
+		div.setting-item__right
+			if data.btn
+				+btn({icon_l: data.btn_icon})(class="icon--block icon--block-gray")
+			else
+				a.setting-item__link.link.h3(href=data.url)!=data.link
+

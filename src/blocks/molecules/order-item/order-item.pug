@@ -1,0 +1,11 @@
+mixin order-item(data)
+	a.order-item(href="#" target="_blank" class!=attributes.class)
+		div.order-item__left
+			+icon(data.icon, 'icon--42')
+		div.order-item__right
+			div.order-item__top
+				span.order-item__title.text.text--bold.text--black!=data.title
+				span.order-item__crypto.h3!=data.crypto
+			div.order-item__bottom
+				span.order-item__date.text.text--sm!=data.date
+				span.order-item__currency.text.text--sm!=data.currency

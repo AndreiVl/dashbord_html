@@ -1,0 +1,136 @@
+.header {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	display: flex;
+	height: 60px;
+
+	/* 4 Visual */
+	background-color: $color-white;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+.header__left {
+	/* 2 Block model */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 54px;
+	padding-left: 15px;
+	padding-right: 15px;
+
+	border-right: 1px solid $color-bg;
+
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		width: 102px;
+		padding-left: 40px;
+		padding-right: 38px;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		width: 282px;
+		padding-left: 38px;
+		padding-right: 38px;
+
+		/* 4 Visual */
+		border: none;
+		background-color: $color-bg-1;
+	}
+}
+.header__left .logo {
+	/* 2 Block model */
+	display: none;
+
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		display: block;
+	}
+}
+.header__left .btn {
+	@media (min-width: 1200px) {
+		/* 4 Visual */
+		visibility: hidden;
+		cursor: unset;
+	}
+}
+.header__right {
+	/* 2 Block model */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-grow: 2;
+	padding-left: 15px;
+	padding-right: 15px;
+
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		padding-left: 39px;
+		padding-right: 39px;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		padding-left: 36px;
+		padding-right: 36px;
+	}
+}
+.header__serch .input {
+	/* 2 Block model */
+	display: none;
+
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		display: flex;
+	}
+}
+.header__action {
+	/* 2 Block model */
+	display: flex;
+	align-items: center;
+}
+.header__action .header-profile {
+	/* 2 Block model */
+	display: none;
+
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		display: flex;
+	}
+}
+.header__action-btn {
+	/* 2 Block model */
+	display: flex;
+	align-items: center;
+}
+.header__action-btn .btn {
+	/* 2 Block model */
+	margin-right: 16px;
+}
+.header__action-btn .btn:last-child {
+	/* 2 Block model */
+	margin-right: 0;
+
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin-right: 16px;
+	}
+}
+
+.scrolled .header {
+	/* 1 Positioning */
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: 500;
+}
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation */
+
+/* 6 Misc */

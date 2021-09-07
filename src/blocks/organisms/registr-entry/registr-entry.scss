@@ -1,0 +1,131 @@
+.registr-entry__row {
+	display: flex;
+	min-height: 100vh;
+}
+.registr-entry__left {
+	display: flex;
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+
+	background-color: $color-white;
+
+	@media (min-width: 768px) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	@media (min-width: 992px) {
+		width: 43%;
+	}
+}
+.registr-entry__right {
+	display: none;
+
+	background-color: $color-bg-1;
+	@media (min-width: 992px) {
+		display: flex;
+		align-items: center;
+		width: 57%;
+	}
+}
+.registr-entry__body {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 380px;
+	margin: 0 auto;
+}
+.registr-entry__top {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-grow: 2;
+}
+.registr-entry__content {
+	@include space(padding, top, orange);
+	@include space(padding, bottom, yellow);
+}
+.registr-entry__content .logo {
+	@include space(margin, bottom, yellow);
+}
+.registr-entry__form {
+	@include space(margin, bottom, green);
+}
+.registr-entry__social {
+	text-align: center;
+}
+.registr-entry__or {
+	position: relative;
+
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	width: 67px;
+	height: 18px;
+	padding-left: 25px;
+	padding-right: 25px;
+	margin: 0 auto;
+	@include space(margin, bottom, blue);
+
+	color: $color-black;
+}
+.registr-entry__or::before,
+.registr-entry__or::after {
+	position: absolute;
+	top: 9px;
+
+	display: block;
+	width: 14px;
+	height: 1px;
+
+	content: "";
+	background-color: $color-bg-1;
+}
+.registr-entry__or::before {
+	left: 3px;
+}
+.registr-entry__or::after {
+	right: 3px;
+}
+.registr-entry__fb {
+	margin-right: 20px;
+}
+.registr-entry__bottom {
+	@include space(padding, top, yellow);
+	@include space(padding, bottom, orange);
+}
+.registr-entry__links {
+	@include space(margin, bottom, blue);
+}
+.registr-entry__links .link {
+	margin-right: 32px;
+}
+.registr-entry__links .link:last-child {
+	margin-right: 0;
+}
+.registr-entry__slider {
+	width: 100%;
+	max-width: 460px;
+	@include space(padding, top, yellow);
+	@include space(padding, bottom, yellow);
+	margin: 0 auto;
+}
+.registr-entry__mb-yellow {
+	@include space(margin, bottom, yellow);
+}
+
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation */
+
+/* 6 Misc */
+
+/*
+ * 	@include space(padding, top, green);
+ */

@@ -1,0 +1,5 @@
+mixin table-item(data)
+	- for (let i = 0; i < data.length; i++)
+		tr.table-item(class!=attributes.class)
+			- for (let j = 0; j < data[i].length; j++)
+				td.text!=data[i][j]

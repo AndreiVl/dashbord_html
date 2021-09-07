@@ -1,0 +1,7 @@
+mixin summary-item(data)
+	div.summary-item(class!=attributes.class)
+		div.summary-item__body
+			p.summary-item__title.text.text--black!=data.title
+			p.summary-item__text.text!=data.text
+		if data.icon
+			+icon(data.icon, 'icon--18')

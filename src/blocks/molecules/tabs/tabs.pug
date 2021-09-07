@@ -1,0 +1,7 @@
+mixin tabs(data)
+	ul.tabs(class!=attributes.class)
+		- for (var i = 0; i < data.length; i++)
+			li.tabs__item
+				a.tabs__link.text.text--semibold.text--black(href=data[i]['url'])!=data[i]['link']
+					if data[i]['notification']
+						+notification({text: data[i]['notification']})(class=data[i]['class_notification'])

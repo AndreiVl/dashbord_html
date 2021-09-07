@@ -1,0 +1,48 @@
+div.referral
+	div.container.container-fluid
+		div.row.main__item
+			div.col-12
+				h1.h1 Referral
+		div.row.justify-content-between.main__item
+			div.col-12.col-md-auto
+				p.text.text--semibold.text--black.referral--mb-mob-viol Agent Management Referral
+			div.col-12.col-md-auto
+				p.text.text--semibold Accounts
+		div.row.main__item
+			div.col-12
+				h2.h2.referral--green Affiliate
+
+				p.text.referral--blue Get referal bonuses by sharing your referal link with friends
+
+				div.referral__donload.referral--blue
+					a.text.link.link--gray(href="#" target="_blank") https//gogeafrica.com/register/agentrose
+					+btn({icon_l: 'icon--copy', icon_width: 'icon--18'})(class="icon--block icon--block-darkgray")
+		div.row
+			div.col-12
+				div.referral__head-list
+					h3.h3.referral__head-item Account Status
+					div.referral__head-item
+						h3.h3 User Name
+						h3.h3 Email
+					h3.h3.referral__head-item Action
+				ul.referral__list
+					li.referral__item
+						+referral-item({
+							badge: {text: 'Active'},
+							badge_class: 'badge--green',
+							user_pik: {img: 'referral__img-01', alt: 'Happy Rana', title: 'Happy Rana'},
+							name: 'Happy Rana', email: 'Ramonrid@wanprotonmail.com'
+						})
+					li.referral__item
+						+referral-item({
+							badge: {text: 'Active'},
+							badge_class: 'badge--green',
+							user_pik: {img: 'referral__img-02', alt: 'Esther Howard', title: 'Esther Howard'},
+							name: 'Esther Howard', email: 'Esther@longmail.com'
+						})
+					li.referral__item
+						+referral-item({
+							badge: {text: 'Pending'},
+							user_pik: {img: 'referral__img-03', alt: 'Jenny Wilson', title: 'Jenny Wilson'},
+							name: 'Jenny Wilson', email: 'WWILL@protonmail.com'
+						})

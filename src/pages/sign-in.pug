@@ -1,0 +1,11 @@
+doctype html
+html(lang="en")
+	include include/head.pug
+	+head('Sign-in')
+
+	body
+		include ../blocks/mixins.pug
+		div.wrapper
+			include ../blocks/organisms/registr-entry/registr-entry--sigin.pug
+
+		include include/script.pug

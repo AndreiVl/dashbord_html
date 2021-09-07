@@ -1,0 +1,99 @@
+.referral-item {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 24px;
+	padding-right: 24px;
+	@include space(padding, top, green);
+	@include space(padding, bottom, green);
+
+	border: 1px solid $color-border;
+	border-radius: 3px;
+}
+.referral__status {
+	order: 1;
+
+	@media (min-width: 768px) {
+		width: 203px;
+	}
+	@media (min-width: 1400px) {
+		width: 347px;
+	}
+}
+.referral__user {
+	display: flex;
+	align-items: flex-start;
+	order: 3;
+	width: 100%;
+	@include space(padding, top, blue);
+
+	@media (min-width: 768px) {
+		align-items: center;
+		order: 2;
+		flex-grow: 2;
+		width: auto;
+		padding-top: 0;
+	}
+}
+.referral__user-info {
+	display: flex;
+	flex-direction: column;
+
+	@media (min-width: 768px) {
+		flex-direction: row;
+	}
+}
+.referral__user-pik {
+	@media (min-width: 768px) {
+		width: 58px;
+	}
+}
+.referral__user-pik .user-pik {
+	width: 38px;
+	flex: 0 0 38px;
+	margin-right: 15px;
+
+	@media (min-width: 768px) {
+		margin-right: 0;
+	}
+}
+.referral__name {
+	padding-top: 3px;
+	@include space(margin, bottom, pink);
+
+	@media (min-width: 768px) {
+		box-sizing: border-box;
+		width: 146px;
+		padding-right: 10px;
+		padding-top: 0;
+		margin-bottom: 0;
+	}
+	@media (min-width: 1400px) {
+		width: 282px;
+	}
+}
+.referral__btn {
+	order: 2;
+
+	@media (min-width: 768px) {
+		order: 3;
+	}
+}
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation */
+
+/* 6 Misc */
+
+/*
+ * 	@include space(padding, top, green);
+ */

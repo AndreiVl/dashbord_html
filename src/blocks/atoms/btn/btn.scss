@@ -1,0 +1,93 @@
+.btn {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	box-sizing: border-box;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 4px 19px;
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 22px;
+	color: $color-white;
+	text-decoration: none;
+	vertical-align: middle;
+
+	/* 4 Visual */
+	cursor: pointer;
+	user-select: none;
+	background-color: $color-bg-2;
+	border: 1px solid $color-bg-2;
+	outline: none;
+
+	/* 5 Animation */
+	transition: all $animation-speed;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-webkit-tap-highlight-color: transparent;
+}
+.btn:hover {
+	/* 4 Visual */
+	background-color: #5164fd;
+	border: 1px solid #5164fd;
+}
+.btn:focus {
+	/* 4 Visual */
+	border: 1px solid #484848;
+}
+.btn:active {
+	/* 4 Visual */
+	background-color: #4c59c2;
+	border: 1px solid #4c59c2;
+}
+.btn:disabled {
+	/* 4 Visual */
+	cursor: not-allowed;
+	opacity: 0.4;
+}
+.btn__text {
+	/* 5 Animation */
+	transition: all $animation-speed;
+}
+.btn .icon {
+	/* 2 Block model */
+	box-sizing: inherit;
+	flex-shrink: 0;
+
+	/* 4 Visual */
+	fill: #000000;
+
+	/* 5 Animation */
+	transition: all $animation-speed;
+}
+// .btn:hover .icon {
+// 	/* 4 Visual */
+// 	fill: #000000;
+// }
+.btn .icon:first-child:not(:last-child) {
+	/* 2 Block model */
+	margin-right: 9px;
+}
+.btn .icon:last-child:not(:first-child) {
+	/* 2 Block model */
+	margin-left: 9px;
+}
+
+/* -------------------------------------------- */
+
+/*
+ * Modifiers
+ *
+ */
+
+@import "--block/--block";
+@import "--outline/--outline";
+@import "--flat/--flat";
+@import "--icon/--icon";
+@import "--circle/--circle";

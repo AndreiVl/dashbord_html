@@ -1,0 +1,14 @@
+mixin wallet-item(data)
+	div.wallet-item(class!=attributes.class)
+		div.wallet-item__top
+			a.wallet-item__left(href="#" target="_blank")
+				+icon(data.icon, 'icon--32')
+				span.wallet-item__title.h3!=data.title
+			+btn({icon_l: 'icon--more', icon_width: 'icon--18'})(class="icon--block icon--block-gray")
+		div.wallet-item__body
+			span.wallet-item__crypto.h1!=data.crypto
+			span.wallet-item__currency.text!=data.currency
+		div.wallet-item__bottom
+			a.wallet-item__link.link.link--black.text.text--sm(href="#") Send
+			a.wallet-item__link.link.link--black.text.text--sm(href="#") Receive
+			a.wallet-item__link.link.link--black.text.text--sm(href="#") Withdraw

@@ -1,0 +1,30 @@
+aside.sidebar
+	div.sidebar__mobile
+		+logo({img: 'logo.svg', alt: 'Crypto', title: 'Crypto'})
+		+btn({icon_l: 'icon--close'})(class="icon--block")
+	div.sidebar__body
+		div.sidebar__top
+			div.sidebar__item
+				+menu({
+					title: 'Main', 
+					items: [
+						{icon: 'icon--web', text: 'Dashboard', url: '#'},
+						{icon: 'icon--list', text: 'Order Book', url: '2#'},
+						{icon: 'icon--planet', text: 'Exchange', url: '2#'},
+						{icon: 'icon--card', text: 'Wallets', url: '#'},
+						{icon: 'icon--repeat', text: 'Transactions', url: '#'},
+						{icon: 'icon--settings', text: 'Settings', url: '#'}
+					]
+				})
+			div.sidebar__item
+				+menu({
+					title: 'Additional', 
+					items: [
+						{icon: 'icon--refresh', text: 'Referral', url: '#'},
+						{icon: 'icon--exit', text: 'Logout', url: '2#'}
+					]
+				})
+		div.sidebar__bottom
+			+item-menu({icon: 'icon--help', text: 'Help', url: '#'})(class="item-menu--pd ")
+			p.text.text--sm Copyright © 2020 
+				a.link(href="#" target="_blank") NG8.RU

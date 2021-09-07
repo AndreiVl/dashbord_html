@@ -1,0 +1,28 @@
+div.registr-entry
+	div.registr-entry__row
+		div.registr-entry__left
+			div.registr-entry__body
+				div.registr-entry__top
+					div.registr-entry__content
+						+logo({img: 'logo.svg', alt: 'Crypto', title: 'Crypto'})
+
+						div.registr-entry__form
+							include ../form/form--registr.pug
+
+						p.text.registr-entry__mb-yellow Already have an account ? 
+							a.link(href="#" target="_blank") Sign in instead
+						div.registr-entry__social
+							span.registr-entry__or.text.text--esm.text--bold OR
+							p.text
+								a.link.registr-entry__fb(href="#") Facebook
+								a.link(href="#") Google
+
+				div.registr-entry__bottom
+					div.registr-entry__links
+						a.text.text--sm.link(href="#") Terms & Condition
+						a.text.text--sm.link(href="#") Privacy Policy
+						a.text.text--sm.link(href="#") Help
+					p.text.text--black © 2019 DashLite. All Rights Reserved.
+		div.registr-entry__right
+			div.registr-entry__slider
+				include ../../molecules/slider/slider.pug

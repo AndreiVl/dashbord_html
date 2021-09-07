@@ -1,0 +1,41 @@
+doctype html
+html(lang="ru")
+	include include/head.pug
+	+head('Home')
+
+	body
+		include ../blocks/mixins.pug
+		div.wrapper
+			include ../blocks/organisms/header/header.pug
+
+			div.body
+				include ../blocks/organisms/sidebar/sidebar.pug
+
+				main.main
+					div.container.container-fluid
+						div.row.justify-content-between.main__item
+							div.col-12.col-md-auto
+								h1.main__mrh1.h1 Welcome!
+							div.col-12.col-md-auto
+								+btn({text: 'Download Report'})
+						div.row.main__item
+							div.col-12.col-lg-4
+								div.main__card-item
+									+currency-card({name: 'BTC Wallet', icon: 'icon--btc-orange', tolal: '1.12048 BTC', course: '1,125.4 USD'})
+							div.col-12.col-lg-4
+								div.main__card-item
+									+currency-card({name: 'BTC Wallet', icon: 'icon--btc-orange', tolal: '1.12048 BTC', course: '1,125.4 USD'})
+							div.col-12.col-lg-4
+								div.main__card-item.main__card-item--mb0
+									+currency-card({name: 'BTC Wallet', icon: 'icon--btc-orange', tolal: '1.12048 BTC', course: '1,125.4 USD'})
+						div.row.main__item
+							div.col-12
+								include ../blocks/organisms/tradingview/tradingview.pug
+						div.row
+							div.col-12
+								div.main__table
+									include ../blocks/organisms/table-recent-activities/table-recent-activities.pug
+
+			div.overlay
+
+		include include/script.pug

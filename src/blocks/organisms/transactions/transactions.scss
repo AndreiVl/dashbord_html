@@ -1,0 +1,47 @@
+.transactions__list {
+	/* 2 Block model */
+	padding: 0;
+	margin: 0;
+
+	/* 4 Visual */
+	list-style: none;
+}
+.transactions__item {
+	/* 2 Block model */
+	@include space(margin, bottom, blue);
+}
+.transactions__item:last-child {
+	/* 2 Block model */
+	margin-bottom: 0;
+}
+.transactions__mrb-green {
+	/* 2 Block model */
+	@include space(margin, bottom, green);
+}
+.transactions__mrb-orange {
+	/* 2 Block model */
+	@include space(margin, bottom, orange);
+}
+.transactions__item--green {
+	/* 2 Block model */
+	@include space(margin, bottom, green);
+}
+.transactions__item--green:last-child {
+	/* 2 Block model */
+	margin-bottom: 0;
+}
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation */
+
+/* 6 Misc */
+
+/*
+ * 	@include space(padding, top, green);
+ */

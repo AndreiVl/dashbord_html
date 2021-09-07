@@ -1,0 +1,49 @@
+.btn--outline {
+	/* 3 Typography */
+	color: $color-textgray;
+
+	/* 4 Visual */
+	border: 1px solid $color-border-btn;
+	background-color: $color-white;
+}
+.btn--outline:hover {
+	/* 4 Visual */
+	border: 1px solid $color-border-btn;
+	background-color: $color-bg-1;
+}
+.btn--outline:focus {
+	/* 3 Typography */
+	color: $color-textgray;
+
+	/* 4 Visual */
+	border: 1px solid $color-border-btn-2;
+}
+.btn--outline:active {
+	/* 3 Typography */
+	color: $color-text-darkgray;
+
+	/* 4 Visual */
+	background-color: $color-bg-1;
+	border: 1px solid $color-border-btn-2;
+}
+.btn--outline:disabled {
+	/* 4 Visual */
+	cursor: not-allowed;
+	opacity: 0.4;
+}
+
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation */
+
+/* 6 Misc */
+
+/*
+ * 	@include space(padding, top, green);
+ */

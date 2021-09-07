@@ -1,0 +1,38 @@
+.menu {
+	/* 2 Block model */
+	width: 100%;
+}
+.menu__title {
+	/* 2 Block model */
+	@include space(margin, bottom, violet);
+
+	/* 3 Typography */
+	text-transform: uppercase;
+}
+.menu__list {
+	/* 2 Block model */
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	margin: 0;
+
+	/* 4 Visual */
+	list-style: none;
+}
+.menu__item {
+	/* 2 Block model */
+	@include space(padding, top, violet);
+	@include space(padding, bottom, violet);
+}
+
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation */
+
+/* 6 Misc */

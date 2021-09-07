@@ -1,0 +1,67 @@
+.main {
+	/* 2 Block model */
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	@include space(padding, top, orange);
+	@include space(padding, bottom, orange);
+
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		padding-left: 39px;
+		padding-right: 39px;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		padding-left: 36px;
+		padding-right: 36px;
+	}
+}
+.main .container {
+	@media (max-width: 767px) {
+		/* 2 Block model */
+		max-width: 100%;
+	}
+}
+.main__mrh1 {
+	/* 2 Block model */
+	@include space(margin, bottom, blue);
+
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin-bottom: 0;
+	}
+}
+.main__item {
+	/* 2 Block model */
+	@include space(margin, bottom, yellow);
+}
+.main__card-item {
+	/* 2 Block model */
+	@include space(margin, bottom, blue);
+
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		margin-bottom: 0;
+	}
+}
+.main__card-item--mb0 {
+	/* 2 Block model */
+	margin-bottom: 0;
+}
+.main__table {
+	/* 2 Block model */
+	overflow-x: auto;
+}
+
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation */
+
+/* 6 Misc */

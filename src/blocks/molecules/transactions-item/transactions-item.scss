@@ -1,0 +1,117 @@
+.transactions-item {
+	/* 2 Block model */
+	padding-left: 16px;
+	padding-right: 16px;
+	@include space(padding, top, green);
+	@include space(padding, bottom, green);
+
+	/* 4 Visual */
+	border: 1px solid $color-border;
+	border-radius: 3px;
+
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+}
+.transactions-item__top {
+	/* 2 Block model */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	@include space(margin, bottom, green);
+
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		flex-direction: row;
+	}
+}
+.transactions-item__text {
+	/* 2 Block model */
+	@include space(margin, bottom, blue);
+
+	/* 3 Typography */
+	word-break: break-all;
+
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		padding-right: 122px;
+		margin-bottom: 0;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		padding-right: 133px;
+	}
+}
+.transactions-item__info {
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		width: 150px;
+		flex: 0 0 150px;
+
+		/* 3 Typography */
+		text-align: right;
+	}
+}
+.transactions-item__crypto {
+	/* 3 Typography */
+	text-transform: uppercase;
+}
+.transactions-item__bottom {
+	/* 2 Block model */
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+
+	/* 4 Visual */
+	border-top: 1px solid $color-bg-1;
+
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		align-items: center;
+		justify-content: flex-end;
+		flex-direction: row;
+
+		/* 3 Typography */
+		text-align: right;
+
+		/* 4 Visual */
+		border-top: none;
+	}
+}
+.transactions-item__bottom > span {
+	/* 2 Block model */
+	display: inline-block;
+	@include space(margin, top, violet);
+	@include space(margin, bottom, violet);
+
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin-top: 0;
+		margin-bottom: 0;
+		margin-right: 40px;
+	}
+}
+.transactions-item__img {
+	/* 2 Block model */
+	margin-left: 26px;
+	margin-right: 26px;
+	vertical-align: middle;
+}
+
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation */
+
+/* 6 Misc */
+
+/*
+ * 	@include space(padding, top, green);
+ */

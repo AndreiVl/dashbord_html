@@ -1,0 +1,47 @@
+.input-border-radius {
+	/* 2 Block model */
+	padding: 12px 17px 10px 16px;
+
+	/* 4 Visual */
+	cursor: pointer;
+	border: 1px solid $color-border;
+	border-radius: 20px;
+
+	/* 5 Animation */
+	transition: all $animation-speed;
+}
+
+.input-border-radius .input input {
+	/* 3 Typography */
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 16px;
+}
+.input-border-radius:hover {
+	/* 4 Visual */
+	border: 1px solid $color-border-focus;
+}
+.input-border-radius:focus {
+	/* 4 Visual */
+	border: 1px solid $color-border-focus;
+}
+.input-border-radius:active {
+	/* 4 Visual */
+	border: 1px solid $color-border-focus;
+}
+
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation */
+
+/* 6 Misc */
+
+/*
+ * 	@include space(padding, top, green);
+ */

@@ -1,0 +1,41 @@
+.header-profile {
+	/* 2 Block model */
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.header-profile__text {
+	/* 2 Block model */
+	margin-right: 8px;
+}
+.header-profile__text a {
+	/* 3 Typography */
+	color: $color-black;
+	text-decoration: none;
+
+	transition: all $animation-speed;
+}
+.header-profile__text a:hover {
+	/* 3 Typography */
+	color: $color-link;
+}
+.header-profile__text a:active {
+	/* 3 Typography */
+	color: $color-link;
+}
+.header-profile__text a:focus {
+	/* 3 Typography */
+	color: $color-link;
+}
+
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation */
+
+/* 6 Misc */

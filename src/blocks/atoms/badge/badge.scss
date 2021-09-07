@@ -1,0 +1,64 @@
+.badge {
+	/* 2 Block model */
+	display: inline-block;
+	padding: 2px 5px;
+
+	/* 3 Typography */
+	color: $color-white;
+	text-transform: none;
+
+	/* 4 Visual */
+	border-radius: 2px;
+	background-color: $color-red;
+}
+.badge--green {
+	/* 4 Visual */
+	background-color: $color-green;
+}
+.badge--big {
+	/* 2 Block model */
+	padding: 5px 20px;
+
+	/* 3 Typography */
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 22px;
+
+	/* 4 Visual */
+	border-radius: 0;
+	background-color: $color-green;
+}
+.badge--big-red {
+	/* 4 Visual */
+	background-color: $color-red;
+}
+.badge--border {
+	/* 2 Block model */
+	padding: 4px 19px;
+
+	/* 3 Typography */
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 22px;
+	color: $color-textgray;
+
+	/* 4 Visual */
+	border: 1px solid $color-border-btn;
+	border-radius: 0;
+	background-color: $color-white;
+}
+.badge--border-no {
+	/* 4 Visual */
+	border-color: transparent;
+}
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation */
+
+/* 6 Misc */

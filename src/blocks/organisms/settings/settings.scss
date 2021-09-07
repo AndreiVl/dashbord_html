@@ -1,0 +1,92 @@
+.settings__upgrade {
+	/* 2 Block model */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding-left: 24px;
+	padding-right: 24px;
+	@include space(padding, top, green);
+	@include space(padding, bottom, green);
+
+	/* 4 Visual */
+	border-radius: 3px;
+	background-color: $color-bg-5;
+
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		flex-direction: row;
+		align-items: center;
+	}
+}
+.settings__upgrade__text {
+	/* 2 Block model */
+	@include space(margin, bottom, blue);
+
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		padding-right: 53px;
+		margin-bottom: 0;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		padding-right: 10px;
+	}
+}
+.settings__upgrade-action {
+	/* 2 Block model */
+	display: flex;
+	align-items: center;
+}
+.settings__upgrade-link {
+	/* 2 Block model */
+	margin-right: 30px;
+
+	/* 3 Typography */
+	white-space: nowrap;
+}
+.settings__title {
+	/* 2 Block model */
+	padding-left: 24px;
+	padding-right: 24px;
+	@include space(padding, top, violet);
+	@include space(padding, bottom, violet);
+
+	/* 4 Visual */
+	border-radius: 3px;
+	background-color: $color-border;
+}
+.settings__list {
+	/* 2 Block model */
+	padding: 0;
+	margin: 0;
+	@include space(margin, bottom, orange);
+
+	list-style: none;
+}
+.settings__list:last-child {
+	/* 2 Block model */
+	margin-bottom: 0;
+}
+.settings__mrb-blue {
+	/* 2 Block model */
+	@include space(margin, bottom, blue);
+}
+.settings__mrb-violet {
+	/* 2 Block model */
+	@include space(margin, bottom, violet);
+}
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation */
+
+/* 6 Misc */
+
+/*
+ * 	@include space(padding, top, green);
+ */

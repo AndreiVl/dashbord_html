@@ -1,0 +1,53 @@
+.wallet__item {
+	/* 2 Block model */
+	@include space(margin, bottom, blue);
+}
+.wallet__mr-violet {
+	/* 2 Block model */
+	@include space(margin, bottom, violet);
+}
+.wallet__btn-mr17 {
+	/* 2 Block model */
+	margin-right: 17px;
+}
+.wallet__item--mobile-blue {
+	/* 2 Block model */
+	@include space(margin, bottom, blue);
+
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin-bottom: 0;
+	}
+}
+.wallet__item--mobile-blue:last-child {
+	/* 2 Block model */
+	margin-bottom: 0;
+}
+.wallet__item--yellow {
+	/* 2 Block model */
+	@include space(margin, bottom, blue);
+
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		@include space(margin, bottom, yellow);
+	}
+}
+.wallet__item--yellow:last-child {
+	/* 2 Block model */
+	@include space(margin, bottom, yellow);
+}
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation */
+
+/* 6 Misc */
+
+/*
+ * 	@include space(padding, top, green);
+ */

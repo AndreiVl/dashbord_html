@@ -1,0 +1,7 @@
+mixin chat-message(data)
+	div.chat-message
+		div.chat-message__img
+			+user-pik(data.user_pik)(class=data.user_pik_mod)
+		div.chat-message__text
+			+message(data.user_message)(class=data.user_message_mod)
+			span.chat-message__date.text.text--sm!=data.date

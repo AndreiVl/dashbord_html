@@ -1,0 +1,98 @@
+.slider__img {
+	/* 2 Block model */
+	@include space(margin, bottom, orange);
+}
+.slider__img img {
+	/* 2 Block model */
+	display: block;
+	width: 100%;
+}
+.slider__title {
+	/* 2 Block model */
+	@include space(margin, bottom, blue);
+
+	/* 3 Typography */
+	text-align: center;
+}
+.slider__text {
+	/* 2 Block model */
+	width: 100%;
+	max-width: 346px;
+	margin: 0 auto;
+	@include space(margin, bottom, yellow);
+
+	/* 3 Typography */
+	text-align: center;
+}
+.slider__dots {
+	/* 2 Block model */
+	display: flex;
+	justify-content: center;
+	padding: 0;
+	margin: 0;
+
+	/* 3 Typography */
+	text-align: center;
+
+	/* 4 Visual */
+	list-style: none;
+}
+.slider__dots li {
+	/* 2 Block model */
+	position: relative;
+
+	/* 2 Block model */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 10px;
+	height: 10px;
+	padding: 0;
+	margin-right: 11px;
+
+	/* 4 Visual */
+	cursor: pointer;
+	border-radius: 50%;
+}
+.slider__dots li:last-child {
+	/* 2 Block model */
+	margin-right: 0;
+}
+.slider__dots li button {
+	/* 2 Block model */
+	display: block;
+	width: 8px;
+	height: 8px;
+	padding: 3px;
+
+	/* 3 Typography */
+	font-size: 0;
+	line-height: 0;
+	color: transparent;
+
+	/* 4 Visual */
+	cursor: pointer;
+	background-color: $color-slider-dots;
+	border: 0;
+	border-radius: 50%;
+	outline: none;
+}
+.slider__dots .slick-active button {
+	/* 4 Visual */
+	background-color: $color-slider-dots-active;
+}
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation */
+
+/* 6 Misc */
+
+/*
+ * 	@include space(padding, top, green);
+ */

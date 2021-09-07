@@ -1,0 +1,35 @@
+doctype html
+html(lang="ru")
+	include include/head.pug
+	+head()
+
+	body
+		include ../blocks/mixins.pug
+		div.intro-page
+			div.container
+				div.row.justify-content-center
+					div.col-12.col-lg-6
+						ul.intro-page__list
+							li.intro-page__item
+								a(href="home.html" target="_blank") Home
+							li.intro-page__item
+								a(href="chat.html" target="_blank") Chat
+							li.intro-page__item
+								a(href="wallet.html" target="_blank") Wallet
+							li.intro-page__item
+								a(href="order-book.html" target="_blank") Order Book
+							li.intro-page__item
+								a(href="transactions.html" target="_blank") Transactions
+							li.intro-page__item
+								a(href="settings.html" target="_blank") Settings
+							li.intro-page__item
+								a(href="register.html" target="_blank") Register
+							li.intro-page__item
+								a(href="sign-in.html" target="_blank") Sign-In
+							li.intro-page__item
+								a(href="referral.html" target="_blank") Referral
+
+							li.intro-page__item
+								a(href="style-guide.html" target="_blank") style-guide
+
+		include include/script.pug

@@ -1,0 +1,10 @@
+mixin transactions-item(data)
+	div.transactions-item(class!=attributes.class)
+		div.transactions-item__top
+			p.transactions-item__text.text!=data.text
+			div.transactions-item__info
+				p.transactions-item__date.text!=data.date
+				p.transactions-item__crypto.text.text--semibold.text--black!=data.crypto
+		div.transactions-item__bottom
+			span.text.text--semibold!=data.conferm
+			+badge({text: data.badge})(class=data.badge_class)

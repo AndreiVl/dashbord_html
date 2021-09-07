@@ -1,0 +1,41 @@
+.chat-message {
+  /* 2 Block model */
+  display: flex;
+  align-items: flex-start;
+}
+.chat-message__img {
+  /* 2 Block model */
+  margin-right: 10px;
+}
+.chat-message__text {
+  /* 2 Block model */
+  display: flex;
+  flex-direction: column;
+}
+.chat-message__text .message {
+  /* 2 Block model */
+  @include space(margin, bottom, pink);
+}
+.chat-message__date {
+  /* 2 Block model */
+  display: inline-block;
+
+  /* 3 Typography */
+  text-transform: uppercase;
+}
+
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation */
+
+/* 6 Misc */
+
+/*
+ * 	@include space(padding, top, green);
+ */

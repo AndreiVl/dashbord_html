@@ -1,0 +1,64 @@
+.btn--circle {
+	/* 2 Block model */
+	padding: 0;
+
+	/* 2 Block model */
+	width: 40px;
+	height: 40px;
+
+	/* 4 Visual */
+	border: 1px solid $color-border-btn-1;
+	border-radius: 50%;
+	background: none;
+}
+.btn--circle:hover {
+	/* 4 Visual */
+	background: $color-bg-1;
+	border: 1px solid $color-border-btn-3;
+}
+.btn--circle:focus {
+	/* 4 Visual */
+	background: $color-bg-1;
+	border: 1px solid $color-border-btn-3;
+}
+.btn--circle:active {
+	/* 4 Visual */
+	background: $color-bg-1;
+	border: 1px solid $color-border-btn-3;
+}
+.btn--circle--bg {
+	/* 4 Visual */
+	background: $color-bg-2;
+	border: 1px solid $color-bg-2;
+}
+.btn--circle--bg .icon {
+	/* 4 Visual */
+	fill: #ffffff;
+}
+.btn--circle--bg:hover {
+	/* 4 Visual */
+	background: $color-royalblue-midle;
+	border: 1px solid $color-royalblue-midle;
+}
+.btn--circle--bg:focus {
+	/* 4 Visual */
+	background: $color-royalblue-midle;
+	border: 1px solid $color-royalblue-midle;
+}
+.btn--circle--bg:active {
+	/* 4 Visual */
+	background: $color-royalblue-dark;
+	border: 1px solid $color-royalblue-dark;
+}
+
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation */
+
+/* 6 Misc */

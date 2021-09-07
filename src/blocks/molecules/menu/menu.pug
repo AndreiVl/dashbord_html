@@ -1,0 +1,7 @@
+mixin menu(data)
+	nav.menu(class!=attributes.class)
+		p.menu__title.h4!=data.title
+		ul.menu__list
+			- for (var i = 0; i < data.items.length; i++)
+				li.menu__item
+					+item-menu({icon: data.items[i]['icon'], text: data.items[i]['text'], url: data.items[i]['url']})

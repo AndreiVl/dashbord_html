@@ -1,0 +1,5 @@
+mixin header-profile(data)
+	div.header-profile
+		div.header-profile__text
+			a(href="#" target="_blank").text!=data.text
+		+user-pik({img: data.img, alt: data.alt, title: data.title})

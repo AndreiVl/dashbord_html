@@ -1,0 +1,54 @@
+.btn--flat {
+	/* 2 Block model */
+	padding: 0;
+
+	/* 3 Typography */
+	color: $color-link;
+
+	/* 4 Visual */
+	border: none;
+	background-color: transparent;
+}
+// .btn--flat .icon {
+// 	/* 4 Visual */
+// 	fill: none;
+// }
+.btn--flat:hover {
+	/* 3 Typography */
+	text-decoration: underline;
+
+	/* 4 Visual */
+	border: none;
+	background-color: transparent;
+}
+.btn--flat:focus {
+	/* 3 Typography */
+	text-decoration: underline;
+
+	/* 4 Visual */
+	border: none;
+	background-color: transparent;
+}
+.btn--flat:active {
+	/* 3 Typography */
+	text-decoration: underline;
+
+	/* 4 Visual */
+	border: none;
+	background-color: transparent;
+}
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation */
+
+/* 6 Misc */
+
+/*
+ * 	@include space(padding, top, green);
+ */

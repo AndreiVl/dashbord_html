@@ -1,0 +1,14 @@
+mixin chat-user(data)
+	div.chat-user(class!=attributes.class)
+		div.chat-user__img
+			+user-pik({img: data.img, alt: data.alt, title: data.title})(class=data.user_mod)
+		div.chat-user__info
+			div.chat-user__left
+				a.chat-user__title.text.text--bold.text--black(href="#" target="_blank")!=data.title
+				p.chat-user__text.text.text--sm!=data.text
+
+			div.chat-user__right
+				if data.date
+					p.chat-user__date.text.text--sm!=data.date
+				if data.text_noti
+					+notification({text: data.text_noti})(class=data.noti_mod)

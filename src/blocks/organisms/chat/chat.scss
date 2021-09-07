@@ -1,0 +1,148 @@
+.chat {
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		@include space(padding, top, green);
+		@include space(padding, bottom, green);
+		/* 4 Visual */
+		border: 1px solid $color-border;
+	}
+}
+.chat__left {
+	/* 1 Positioning */
+	position: relative;
+
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		padding-left: 24px;
+		padding-right: 8px;
+	}
+}
+.chat__left::before {
+	/* 1 Positioning */
+	position: absolute;
+	right: -17px;
+	top: -13px;
+	bottom: -7px;
+
+	/* 2 Block model */
+	display: none;
+	width: 1px;
+	height: calc(100% + 8px);
+
+	/* 4 Visual */
+	content: "";
+	background-color: $color-border;
+
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		display: block;
+	}
+}
+.chat__profile {
+	@include space(padding, bottom, blue);
+
+	/* 4 Visual */
+	border-bottom: 1px solid $color-border;
+}
+.chat__user-list {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	overflow-y: auto;
+	max-height: calc(100vh - 211px);
+	padding: 0;
+	padding-right: 18px;
+	@include space(padding, top, blue);
+	margin: 0;
+	margin-right: -18px;
+
+	/* 4 Visual */
+	list-style: none;
+
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		max-height: calc(100vh - 261px);
+	}
+}
+.chat__user-item {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	@include space(padding, top, violet);
+	@include space(padding, bottom, violet);
+}
+.chat__user-item::before {
+	/* 1 Positioning */
+	position: absolute;
+	left: 48px;
+	right: 0;
+	bottom: 1px;
+
+	/* 2 Block model */
+	display: block;
+	height: 1px;
+
+	/* 4 Visual */
+	content: "";
+	background-color: $color-border;
+}
+.chat__body {
+	/* 2 Block model */
+	padding-left: 11px;
+	padding-right: 24px;
+}
+.chat__current-user {
+	/* 2 Block model */
+	@include space(padding, bottom, blue);
+
+	/* 4 Visual */
+	border-bottom: 1px solid $color-border;
+}
+.chat__msg-list {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	overflow-y: auto;
+	max-height: calc(100vh - 317px);
+	padding: 0;
+	padding-right: 18px;
+	@include space(padding, top, blue);
+	margin: 0;
+	margin-right: -18px;
+	@include space(margin, bottom, blue);
+
+	/* 4 Visual */
+	list-style: none;
+}
+.chat__msg-item {
+	/* 2 Block model */
+	@include space(padding, top, violet);
+	@include space(padding, bottom, violet);
+}
+.chat__mobile {
+	/* 2 Block model */
+	display: none;
+
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		display: block;
+	}
+}
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation */
+
+/* 6 Misc */
+
+/*
+ * 	@include space(padding, top, green);
+ */

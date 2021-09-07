@@ -1,0 +1,34 @@
+.table-item {
+	/* 4 Visual */
+	border-bottom: 1px solid $color-border;
+}
+.table-item:last-child {
+	/* 4 Visual */
+	border: none;
+}
+.table-item td {
+	/* 2 Block model */
+	padding-top: 10px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+
+	/* 3 Typography */
+	text-align: left;
+	text-transform: uppercase;
+}
+.table-item td:first-child {
+	/* 2 Block model */
+	padding-left: 13px;
+}
+
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation */
+
+/* 6 Misc */

@@ -1,0 +1,116 @@
+.input {
+	/* 2 Block model */
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+.input label {
+	/* 2 Block model */
+	padding: 0;
+	margin: 0;
+	@include space(margin, bottom, violet);
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 22px;
+	color: $color-textgray;
+
+	/* 5 Animation */
+	transition: all 0.4s;
+}
+.input input {
+	/* 2 Block model */
+	padding: 0;
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 22px;
+	color: $color-textgray;
+
+	/* 4 Visual */
+	outline: none;
+	border: none;
+	background: none;
+
+	/* 5 Animation */
+	transition: all 0.4s;
+}
+.input input::-webkit-input-placeholder {
+	/* 3 Typography */
+	color: $color-textlight;
+}
+.input input::-moz-placeholder {
+	/* 3 Typography */
+	color: $color-textlight;
+	text-overflow: ellipsis;
+
+	/* 4 Visual */
+	opacity: 1;
+}
+.input input:-moz-placeholder {
+	/* 3 Typography */
+	color: $color-textlight;
+	text-overflow: ellipsis;
+
+	/* 4 Visual */
+	opacity: 1;
+}
+.input input:-ms-input-placeholder {
+	/* 3 Typography */
+	color: $color-textlight;
+	text-overflow: ellipsis;
+}
+.input input[placeholder] {
+	/* 3 Typography */
+	text-overflow: ellipsis;
+}
+.input input:hover {
+	/* 4 Visual */
+	cursor: pointer;
+	opacity: 0.7;
+}
+.input input:focus {
+	/* 4 Visual */
+	opacity: 0.7;
+}
+.input input:active {
+	/* 4 Visual */
+	opacity: 0.7;
+}
+.input input:disabled {
+	/* 3 Typography */
+	color: $color-textgray;
+
+	/* 4 Visual */
+	cursor: not-allowed;
+	opacity: 0.7;
+}
+.input--border input {
+	/* 2 Block model */
+	padding: 11px 16px;
+
+	/* 3 Typography */
+	font-size: 12px;
+	line-height: 16px;
+
+	/* 4 Visual */
+	border: 1px solid $color-bg-1;
+	border-radius: 3px;
+}
+.input--border input:hover {
+	/* 4 Visual */
+	border: 1px solid $color-border-focus;
+}
+.input--border input:focus {
+	/* 4 Visual */
+	border: 1px solid $color-border-focus;
+}
+.input--border input:active {
+	/* 4 Visual */
+	border: 1px solid $color-border-focus;
+}

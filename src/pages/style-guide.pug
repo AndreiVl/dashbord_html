@@ -1,0 +1,325 @@
+doctype html
+html(lang="ru")
+	include include/head.pug
+	+head('Style Guide')
+
+	body
+		include ../blocks/mixins.pug
+
+		section.style-guide
+			div.container
+				div.row.mr-mb10
+					div.col-12
+						h1 Atoms
+				div.row.mr-mb10 
+					div.col-12
+						p.big-text big-text - Open Sans 30\36 SemiBold
+						h1.h1 H1 - Open Sans 26\32 SemiBold
+						h2.h2 H2 - Open Sans 20\26 SemiBold
+						h3.h3 H3 - Open Sans 16\24 SemiBold
+						h4.h4 H4 - Open Sans 14\18 SemiBold
+						p.text text - Open Sans 14\22
+						p.text.text--bold text--bold - Open Sans 14\22 Bold
+						p.text.text--sm text--sm - Open Sans 12\16
+						p.text.text--sm.text--bold text--sm.text--bold - Open Sans 12\16 Bold
+				div.row.mr-mb10 
+					div.col-12
+						+logo({img: 'logo.svg', alt: 'Crypto', title: 'Crypto'})
+				div.row.mr-mb10 
+					div.col-12
+						+user-pik({img: 'user-pic__img-01', alt: 'Author', title: 'Author'})
+				div.row.mr-mb10 
+					div.col-12
+						+user-pik({img: 'user-pic__img-01', alt: 'Author', title: 'Author'})(class="user-pic--big user-pic--big-noactiv")
+				div.row.mr-mb10 
+					div.col-12
+						+user-pik({img: 'user-pic__img-01', alt: 'Author', title: 'Author'})(class="user-pic--big user-pic--big-activ")
+				div.row.mr-mb10 
+					div.col-12
+						+badge({text: 'Paused'})
+						+badge({text: 'Completed'})(class="badge--green")
+						+badge({text: '12 Confirmation'})(class="badge--border")
+						+badge({text: '1.124589756 BTC'})(class="badge--big")
+				div.row.mr-mb10 
+					div.col-12
+						+notification({text: '10'})
+				div.row.mr-mb10 
+					div.col-12
+						+notification({text: '10'})(class="notification--red")
+				div.row.mr-mb10 
+					div.col-12
+						+btn({icon_l: 'icon--plain'})(class="btn--circle btn--circle--bg")
+						+btn({icon_l: 'icon--clip', icon_width: 'icon--18'})(class="btn--circle")
+						+btn({text: 'Register'})(class="btn--block")
+				div.row.mr-mb10 
+					div.col-12
+						+btn({text: 'Register'})(disabled)
+				div.row.mr-mb10
+					div.col-12
+						+btn({text: 'Download Report'})
+				div.row.mr-mb10
+					div.col-12
+						+btn({text: 'Download Report'})(class="btn--outline")
+				div.row.mr-mb10
+					div.col-12
+						+btn({text: 'Download Report'})(class="btn--outline" disabled)
+				div.row.mr-mb10
+					div.col-8
+						+chat-user({img: 'user-pic__img-01', alt: 'Author', title: 'Author', user_mod: 'user-pic--big user-pic--big-noactiv', title: 'John Doe', text: 'Lorem ipsum dolor sit', date: '4:32 PM', text_noti: '10', noti_mod: false})
+				div.row.mr-mb10
+					div.col-8
+						+chat-user({img: 'user-pic__img-01', alt: 'Author', title: 'Author', user_mod: 'user-pic--big user-pic--big-activ', title: 'John Doe', text: 'Lorem ipsum dolor sit', date: '4:32 PM', text_noti: '10', noti_mod: 'notification--red'})
+				div.row.mr-mb10
+					div.col-12
+						+message({text: 'Lorem ipsum dolor sit amet, consectetur adipiscing, purus sit ametl.'})
+				div.row.mr-mb10
+					div.col-12
+						+message({text: 'Lorem ipsum dolor sit amet, consectetur adipiscing, purus sit ametl.'})(class="message--green")
+				div.row.mr-mb10
+					div.col-12
+						+btn({icon_l: 'icon--hamburger'})(class="icon--block")
+						+btn({icon_l: 'icon--reload-sharp', text: 'Load More'})(class="btn--flat")
+				div.row.mr-mb10
+					div.col-12
+						+summary-item({title: 'Address', text: '2dxg25454841132457d21564d1321d35d5'})
+						+summary-item({title: 'Hash 160', text: '3df2dfds24478454d445d5sf454df545d'})(class="summary-item--white")
+						+summary-item({title: 'Tools', text: 'Related Tags - Unspent Outputs'})
+						+summary-item({title: 'No. Transactions', text: '54', icon: 'icon--chart'})(class="summary-item--icon")
+						+summary-item({title: 'Total Received', text: '95.12345 BTC', icon: 'icon--chart'})(class="summary-item--white summary-item--icon")
+						+summary-item({title: 'Total Balance', text: '0 BTC', icon: 'icon--chart'})(class="summary-item--icon")
+				div.row.mr-mb10
+					div.col-12
+						+referral-item({
+							badge: {text: 'Paused'},
+							user_pik: {img: 'referral__img-01', alt: 'Author', title: 'Author'},
+							name: 'Happy Rana', email: 'Ramonrid@wanprotonmail.com'
+						})
+						+referral-item({
+							badge: {text: 'Completed'},
+							badge_class: 'badge--green',
+							user_pik: {img: 'referral__img-02', alt: 'Author', title: 'Author'},
+							name: 'Happy Rana', email: 'Ramonrid@wanprotonmail.com'
+						})
+				div.row.mr-mb10
+					div.col-12 
+						+input({label_text: false, type: 'text', name: 'serch', placeholder: 'Search here...'})
+				div.row.mr-mb10
+					div.col-12
+						+checkbox({name: 'accept'})
+						+checkbox({name: 'check', checked: true})
+						+checkbox({name: 'dese'})(disabled="disabled")
+						+checkbox({name: 'dis', checked: true})(disabled="disabled")
+				div.row.mr-mb10
+					div.col-12
+						+chat-message({
+							user_pik:{img: 'user-pic__img-01', alt: 'Author', title: 'Author'},
+							user_pik_mod: 'user-pic--big',
+							user_message: {text: 'Lorem ipsum dolor sit amet, consectetur adipiscing, purus sit ametl.'},
+							user_message_mod: 'message--green',
+							date: '4:32 PM'
+						})
+				div.row.mr-mb10
+					div.col-12
+						+chat-message({
+							user_pik:{img: 'user-pic__img-01', alt: 'Author', title: 'Author'},
+							user_pik_mod: 'user-pic--big',
+							user_message: {text: 'Lorem ipsum dolor sit amet, consectetur adipiscing, purus sit ametl.'},
+							date: '4:32 PM'
+						})
+				div.row.mr-mb10
+					div.col-12
+						+input-border-radius({
+							input: {label_text: false, type: 'text', name: 'serch-massage', placeholder: 'Type to message'}
+						})
+				div.row.mr-mb10
+					div.col-12
+						include ../blocks/molecules/chat-form/chat-form.pug
+				div.row.mr-mb10 
+					div.col-12
+						ul.style-guide__icon-list
+							li.style-guide__icon-item
+								+icon('icon--apps')
+								p.text icon--apps
+							li.style-guide__icon-item
+								+icon('icon--card')
+								p.text icon--card
+							li.style-guide__icon-item
+								+icon('icon--close')
+								p.text icon--close
+							li.style-guide__icon-item
+								+icon('icon--exit')
+								p.text icon--exit
+							li.style-guide__icon-item
+								+icon('icon--hamburger')
+								p.text icon--hamburger
+							li.style-guide__icon-item
+								+icon('icon--help')
+								p.text icon--help
+							li.style-guide__icon-item
+								+icon('icon--list')
+								p.text icon--list
+							li.style-guide__icon-item
+								+icon('icon--mail')
+								p.text icon--mail
+							li.style-guide__icon-item
+								+icon('icon--money')
+								p.text icon--money
+							li.style-guide__icon-item
+								+icon('icon--notifications')
+								p.text icon--notifications
+							li.style-guide__icon-item
+								+icon('icon--planet')
+								p.text icon--planet
+							li.style-guide__icon-item
+								+icon('icon--refresh')
+								p.text icon--refresh
+							li.style-guide__icon-item
+								+icon('icon--search')
+								p.text icon--search
+							li.style-guide__icon-item
+								+icon('icon--settings')
+								p.text icon--settings
+							li.style-guide__icon-item
+								+icon('icon--web')
+								p.text icon--web
+							li.style-guide__icon-item
+								+icon('icon--btc', 'icon--18')
+								p.text icon--btc
+							li.style-guide__icon-item
+								+icon('icon--eth', 'icon--18')
+								p.text icon--eth
+							li.style-guide__icon-item
+								+icon('icon--ltc', 'icon--18')
+								p.text icon--ltc
+							li.style-guide__icon-item
+								+icon('icon--more', 'icon--18')
+								p.text icon--more
+							li.style-guide__icon-item
+								+icon('icon--clip', 'icon--18')
+								p.text icon--clip
+							li.style-guide__icon-item.style-guide__icon-item--bg
+								+icon('icon--plain')
+								p.text icon--plain
+							li.style-guide__icon-item
+								+icon('icon--btc', 'icon--32')
+								p.text icon--btc
+							li.style-guide__icon-item
+								+icon('icon--usd', 'icon--32')
+								p.text icon--usd
+							li.style-guide__icon-item
+								+icon('icon--eth', 'icon--32')
+								p.text icon--eth
+							li.style-guide__icon-item
+								+icon('icon--eur', 'icon--32')
+								p.text icon--eur
+							li.style-guide__icon-item
+								+icon('icon--nio', 'icon--32')
+								p.text icon--nio
+							li.style-guide__icon-item
+								+icon('icon--btc-orange', 'icon--42')
+								p.text icon--btc-orange
+							li.style-guide__icon-item
+								+icon('icon--eth-blue', 'icon--42')
+								p.text icon--eth-blue
+							li.style-guide__icon-item
+								+icon('icon--chart', 'icon--18')
+								p.text icon--chart
+							li.style-guide__icon-item
+								+icon('icon--copy', 'icon--18')
+								p.text icon--copy
+							li.style-guide__icon-item
+								+icon('icon--reload-sharp')
+								p.text icon--reload-sharp
+							li.style-guide__icon-item
+								+icon('icon--arrow-right')
+								p.text icon--arrow-right
+							li.style-guide__icon-item
+								+icon('icon--lock')
+								p.text icon--lock
+				div.row.mr-mb10
+					div.col-12
+						h1 Molecules
+				div.row.mr-mb10
+					div.col-12
+						+header-profile({text: 'Constance Fields', img: 'user-pic__img-01', alt: 'Author', title: 'Author'})
+				div.row.mr-mb10
+					div.col-12
+						+item-menu({icon: 'icon--web', text: 'Dashboard'})
+				div.row.mr-mb10
+					div.col-12
+						+search({label_text: false, icon: 'icon--search', type: 'text', name: 'serch', placeholder: 'Search here...'})
+				div.row.mr-mb10
+					div.col-12
+						+menu({
+							title: 'Main', 
+							items: [
+								{icon: 'icon--web', text: 'Dashboard', url: '#'},
+								{icon: 'icon--list', text: 'Order Book', url: '2#'},
+								{icon: 'icon--planet', text: 'Exchange', url: '2#'},
+								{icon: 'icon--card', text: 'Wallets', url: '#'},
+								{icon: 'icon--repeat', text: 'Transactions', url: '#'},
+								{icon: 'icon--settings', text: 'Settings', url: '#'}
+							]
+						})
+				div.row.mr-mb10
+					div.col-12
+						div.style-guide__tabs
+							+tabs([
+								{url: '#tab-5', link: 'Personal'},
+								{url: '#tab-6', link: 'Security'},
+								{url: '#tab-7', link: 'Notifications'},
+								{url: '#tab-8', link: 'Connect Social'}
+							])
+							div.order-book__tab(id='tab-5') 5
+							div.order-book__tab(id='tab-6') 6
+							div.order-book__tab(id='tab-7') 7
+							div.order-book__tab(id='tab-8') 8
+				div.row.mr-mb10
+					div.col-12
+						+currency-card({name: 'BTC Wallet', icon: 'icon--btc', tolal: '15.12548 BTC', course: '1,125.4 USD'})
+				div.row.mr-mb10
+					div.col-12
+						+wallet-item({icon: 'icon--btc', title: 'Bitcoin Wallet', crypto: '26.509505 BTC', currency: '10,924.63USD'})
+				div.row.mr-mb10
+					div.col-12
+						+order-item({icon: 'icon--eth-blue', title: 'Buy Bitcoin', crypto: '0.5384 BTC', date: 'Nov 12, 2019 11:34 PM', currency: '3,980.93 USD'})
+				div.row.mr-mb10
+					div.col-12
+						+transactions-item({
+							text: '2dxg25454841132457d21564d1321d35d5zxd54d545dv4v34d54v5d4v5d4x54dA5A5A52dxg25454841132457d21564d1321d35d5zxd54d545dv4v34d54v5d4 <img class="transactions-item__img" src="images/transactions-item__img-arrows-green.svg" alt="arrows">4dA5A5A52dxg25454841132457d21564d1321d35', date: '2017-12-03 13:57:30', crypto: '0.35473875 BTC',
+							items: [
+								{text: '12 Confirmation', class: 'badge--border'},
+								{text: '1.124589756 BTC', class: 'badge--big'}
+							]
+						})
+				div.row.mr-mb10
+					div.col-12
+						+setting-item({title: 'Full Name', info: 'Abu Bin Ishtiyak', btn: true, btn_icon: 'icon--arrow-right'})
+				div.row.mr-mb10
+					div.col-12
+						table(align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;")
+							+table-head({
+								class: "table-head__recent-activities",
+								items: [
+									{title: '#'},
+									{title: 'Date'},
+									{title: 'Time'},
+									{title: 'Transaction ID'},
+									{title: 'Status'},
+									{title: 'Value'}
+								]
+							})
+							+table-item([
+								['1', '01.27.2019', '02:22 PM', 'DFRASEDE', name,  '$2.39'],
+								['2', '01.27.2019', '02:22 PM', 'DFRASEDE', name2, '$2.39']
+								])
+				div.row.mr-mb10
+					div.col-12
+						include ../blocks/organisms/header/header.pug
+				div.row.mr-mb10
+					div.col-12
+						include ../blocks/organisms/table-recent-activities/table-recent-activities.pug
+				div.row.mr-mb10
+					div.col-12
+						include ../blocks/organisms/tradingview/tradingview.pug
+		include include/script.pug

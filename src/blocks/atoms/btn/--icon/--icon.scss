@@ -1,0 +1,72 @@
+.icon--block {
+	/* 2 Block model */
+	padding: 0;
+
+	/* 4 Visual */
+	background: none;
+	border: none;
+}
+.icon--block:hover {
+	/* 4 Visual */
+	background: none;
+	border: none;
+}
+.icon--block:hover .icon {
+	/* 4 Visual */
+	fill: $color-royalblue;
+}
+.icon--block:focus {
+	/* 4 Visual */
+	background: none;
+	border: none;
+}
+.icon--block:active {
+	/* 4 Visual */
+	background: none;
+	border: none;
+}
+.icon--block:disabled {
+	/* 4 Visual */
+	cursor: not-allowed;
+	opacity: 0.4;
+}
+.icon--block-gray:hover .icon {
+	/* 4 Visual */
+	fill: $color-gainsboro;
+}
+.icon--block-gray:focus .icon {
+	/* 4 Visual */
+	fill: $color-gainsboro;
+}
+.icon--block-gray:active .icon {
+	/* 4 Visual */
+	fill: $color-gainsboro;
+}
+.icon--block-gray:disabled {
+	/* 4 Visual */
+	cursor: not-allowed;
+	fill: $color-gainsboro;
+	opacity: 0.4;
+}
+.icon--block-darkgray .icon {
+	/* 4 Visual */
+	fill: #858585;
+}
+.icon--block-darkgray:hover .icon {
+	/* 4 Visual */
+	fill: $color-darkgray;
+}
+.icon--block-darkgray:focus .icon {
+	/* 4 Visual */
+	fill: $color-darkgray;
+}
+.icon--block-darkgray:active .icon {
+	/* 4 Visual */
+	fill: $color-darkgray;
+}
+.icon--block-darkgray:disabled {
+	/* 4 Visual */
+	cursor: not-allowed;
+	fill: $color-darkgray;
+	opacity: 0.4;
+}

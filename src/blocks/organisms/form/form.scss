@@ -1,0 +1,41 @@
+.form__item {
+	/* 2 Block model */
+	@include space(margin, bottom, blue);
+}
+.form__item:last-child {
+	/* 2 Block model */
+	margin-bottom: 0;
+}
+.form__item-big {
+	/* 2 Block model */
+	@include space(margin, bottom, green);
+}
+.form__item .h3 {
+	/* 2 Block model */
+	@include space(margin, bottom, violet);
+}
+.form__checkbox {
+	/* 2 Block model */
+	display: flex;
+	align-items: flex-start;
+}
+.form__checkbox .checkbox {
+	/* 2 Block model */
+	padding-top: 2px;
+}
+
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation */
+
+/* 6 Misc */
+
+/*
+ * 	@include space(padding, top, green);
+ */

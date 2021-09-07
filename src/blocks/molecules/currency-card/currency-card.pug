@@ -1,0 +1,7 @@
+mixin currency-card(data)
+	a.currency-card(href="#" target="_blank" class!=attributes.class)
+		div.currency-card__top
+			div.currency-card__name-currency.h4!=data.name
+			+icon(data.icon, 'icon--18')
+		div.currency-card__total.big-text!=data.tolal
+		div.currency-card__course.text.text--sm!=data.course

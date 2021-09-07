@@ -1,0 +1,68 @@
+.item-menu {
+	/* 2 Block model */
+	display: flex;
+	align-items: center;
+
+	/* 3 Typography */
+	text-decoration: none;
+
+	/* 4 Visual */
+	cursor: pointer;
+}
+.item-menu__icon {
+	/* 2 Block model */
+	display: flex;
+	margin-right: 8px;
+}
+.item-menu__icon .icon {
+	/* 5 Animation */
+	transition: all $animation-speed;
+}
+.item-menu__text {
+	/* 3 Typography */
+	color: $color-textgray;
+
+	/* 5 Animation */
+	transition: all $animation-speed;
+}
+.item-menu--pd {
+	/* 2 Block model */
+	@include space(padding, top, violet);
+	@include space(padding, bottom, violet);
+}
+.item-menu:hover .item-menu__text {
+	/* 3 Typography */
+	color: $color-link;
+}
+.item-menu:focus .item-menu__text {
+	/* 3 Typography */
+	color: $color-link;
+}
+.item-menu:active .item-menu__text {
+	/* 3 Typography */
+	color: $color-link;
+}
+.item-menu:hover .icon {
+	/* 4 Visual */
+	fill: $color-link;
+}
+.item-menu:focus .icon {
+	/* 4 Visual */
+	fill: $color-link;
+}
+.item-menu:active .icon {
+	/* 4 Visual */
+	fill: $color-link;
+}
+
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation */
+
+/* 6 Misc */

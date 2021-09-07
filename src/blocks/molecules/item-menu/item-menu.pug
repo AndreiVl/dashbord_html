@@ -1,0 +1,5 @@
+mixin item-menu(data)
+	a.item-menu(href=data.url class!=attributes.class)
+		div.item-menu__icon
+			+icon(data.icon)
+		p.item-menu__text.text!=data.text

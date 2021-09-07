@@ -1,0 +1,26 @@
+div.wallet
+	div.row.justify-content-between.main__item
+		div.col-12.col-md-auto.main__mrh1
+			h1.wallet__mr-violet.h1 Wallet
+			p.text See full list of your orders of your account
+		div.col-12.col-md-auto
+			+btn({text: 'Send'})(class="wallet__btn-mr17")
+			+btn({text: 'Withdraw'})
+	div.row.wallet__item
+		div.col-12
+			p.text.text--bold Crypto Accounts
+	div.row
+		div.col-12.col-md-6.col-lg-4.wallet__item--yellow
+			+wallet-item({icon: 'icon--btc', title: 'Bitcoin Wallet', crypto: '26.509505 BTC', currency: '10,924.63USD'})
+		div.col-12.col-md-6.col-lg-4.wallet__item--yellow
+			+wallet-item({icon: 'icon--nio', title: 'NioWallet', crypto: '2.732058 NIO', currency: '5,924.63USD'})
+		div.col-12.col-md-6.col-lg-4.wallet__item--yellow
+			+wallet-item({icon: 'icon--eth', title: 'Ethereum Wallet', crypto: '0.452058 ETH', currency: '33,924.63USD'})
+	div.row.wallet__item
+		div.col-12
+			p.text.text--bold Fiat Accounts
+	div.row
+		div.col-12.col-md-6.col-lg-4.wallet__item--mobile-blue
+			+wallet-item({icon: 'icon--usd', title: 'USD Account', crypto: '2.732058 USD', currency: '4,924.63USD'})
+		div.col-12.col-md-6.col-lg-4.wallet__item--mobile-blue
+			+wallet-item({icon: 'icon--eur', title: 'EUR Account', crypto: '2.732058 EUR', currency: '10,924.63USD'})

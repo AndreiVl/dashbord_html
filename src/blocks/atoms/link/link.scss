@@ -1,0 +1,95 @@
+.link {
+	/* 3 Typography */
+	text-decoration: none;
+	color: $color-link;
+
+	/* 4 Visual */
+	outline: none;
+
+	/* 5 Animation */
+	transition: all $animation-speed;
+}
+.link:hover {
+	/* 3 Typography */
+	text-decoration: underline;
+}
+.link:focus {
+	/* 3 Typography */
+	text-decoration: underline;
+}
+.link:active {
+	/* 3 Typography */
+	text-decoration: underline;
+}
+.link--black {
+	/* 3 Typography */
+	text-decoration: underline;
+	color: $color-black;
+}
+.link--black:hover {
+	/* 3 Typography */
+	text-decoration: none;
+	color: $color-textlight;
+}
+.link--black:focus {
+	/* 3 Typography */
+	text-decoration: none;
+	color: $color-textlight;
+}
+.link--black:active {
+	/* 3 Typography */
+	text-decoration: none;
+	color: $color-textlight;
+}
+.link--textdecor {
+	/* 3 Typography */
+	text-decoration: underline;
+}
+.link--textdecor:hover {
+	/* 3 Typography */
+	text-decoration: none;
+}
+.link--textdecor:focus {
+	/* 3 Typography */
+	text-decoration: none;
+}
+.link--textdecor:active {
+	/* 3 Typography */
+	text-decoration: none;
+}
+.link--gray {
+	/* 3 Typography */
+	text-decoration: none;
+	color: $color-textgray;
+}
+.link--gray:hover {
+	/* 3 Typography */
+	text-decoration: underline;
+	color: $color-black;
+}
+.link--gray:focus {
+	/* 3 Typography */
+	text-decoration: underline;
+	color: $color-black;
+}
+.link--gray:active {
+	/* 3 Typography */
+	text-decoration: underline;
+	color: $color-black;
+}
+// .link:visited {
+// 	/* 3 Typography */
+// 	color: red;
+// }
+
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation */
+
+/* 6 Misc */

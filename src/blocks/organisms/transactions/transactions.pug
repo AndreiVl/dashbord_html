@@ -1,0 +1,47 @@
+div.transactions
+	div.row.justify-content-between.main__item
+		div.col-12.col-md-auto
+			h1.h1 Transactions
+	div.row.main__item
+		div.col-12.col-xll-8.transactions__item--green
+			h2.h2.transactions__mrb-green Summary
+			+summary-item({title: 'Address', text: '2dxg25454841132457d21564d1321d35d5'})
+			+summary-item({title: 'Hash 160', text: '3df2dfds24478454d445d5sf454df545d'})(class="summary-item--white")
+			+summary-item({title: 'Tools', text: 'Related Tags - Unspent Outputs'})
+		div.col-12.col-xll-4.transactions__item--green
+			h2.h2.transactions__mrb-green Transactions
+			+summary-item({title: 'No. Transactions', text: '54', icon: 'icon--chart'})(class="summary-item--icon")
+			+summary-item({title: 'Total Received', text: '95.12345 BTC', icon: 'icon--chart'})(class="summary-item--icon")
+			+summary-item({title: 'Total Balance', text: '0 BTC', icon: 'icon--chart'})(class="summary-item--icon")
+	div.row
+		div.col-12
+			h2.h2.transactions__mrb-green Transactions
+			ul.transactions__list
+				li.transactions__item
+					+transactions-item({
+						text: '2dxg25454841132457d21564d1321d35d5zxd54d545dv4v34d54v5d4v5d4x54dA5A5A52dxg25454841132457d21564d1321d35d5zxd54d545dv4v34d54v5d4 <img class="transactions-item__img" src="images/transactions-item__img-arrows-green.svg" alt="arrows">4dA5A5A52dxg25454841132457d21564d1321d35', date: '2017-12-03 13:57:30', crypto: '0.35473875 BTC',
+						conferm: '12 Confirmation',
+						badge: '1.124589756 BTC',
+						badge_class: 'badge--big'
+					})
+				li.transactions__item
+					+transactions-item({
+						text: '2dxg25454841132457d21564d1321d35d5zxd54d545dv4v34d54v5d4v5d4x54dA5A5A52dxg25454841132457d21564d1321d35d5zxd54d545dv4v34d54v5d4 <img class="transactions-item__img" src="images/transactions-item__img-arrows-red.svg" alt="arrows">4dA5A5A52dxg25454841132457d21564d1321d35', date: '2017-12-03 13:57:30', crypto: '0.35473875 BTC',
+						conferm: '12 Confirmation',
+						badge: '1.124589756 BTC',
+						badge_class: 'badge--big badge--big-red'
+					})
+				li.transactions__item
+					+transactions-item({
+						text: '2dxg25454841132457d21564d1321d35d5zxd54d545dv4v34d54v5d4v5d4x54dA5A5A52dxg25454841132457d21564d1321d35d5zxd54d545dv4v34d54v5d4 <img class="transactions-item__img" src="images/transactions-item__img-arrows-green.svg" alt="arrows">4dA5A5A52dxg25454841132457d21564d1321d35', date: '2017-12-03 13:57:30', crypto: '0.35473875 BTC',
+						conferm: '12 Confirmation',
+						badge: '1.124589756 BTC',
+						badge_class: 'badge--big'
+					})
+				li.transactions__item
+					+transactions-item({
+						text: '2dxg25454841132457d21564d1321d35d5zxd54d545dv4v34d54v5d4v5d4x54dA5A5A52dxg25454841132457d21564d1321d35d5zxd54d545dv4v34d54v5d4 <img class="transactions-item__img" src="images/transactions-item__img-arrows-red.svg" alt="arrows">4dA5A5A52dxg25454841132457d21564d1321d35', date: '2017-12-03 13:57:30', crypto: '0.35473875 BTC',
+						conferm: '12 Confirmation',
+						badge: '1.124589756 BTC',
+						badge_class: 'badge--big badge--big-red'
+					})

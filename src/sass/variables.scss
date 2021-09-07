@@ -1,0 +1,142 @@
+/*
+ * Fonts
+ *
+ */
+
+$font-main: "Open Sans", sans-serif;
+
+/*
+ * Colors Base
+ *
+ */
+$color-royalblue: #6576ff;
+$color-royalblue-midle: #5164fd;
+$color-royalblue-dark: #4c59c2;
+
+$color-crimson: #ff3366;
+$color-mediumseagreen: #10b759;
+
+$color-darkgray: #484848;
+$color-dimgray: #858585;
+$color-gainsboro: #c9c8cb;
+$color-lightgray: #e5e9f2;
+$color-skyblue: #cce5ff;
+$color-plum: #f1f2fe;
+$color-whitesmoke: #f5f5fa;
+$color-lightcyan: #effafa;
+
+/*
+ * Colors Works
+ *
+ */
+
+$color-black: $color-darkgray;
+$color-white: #ffffff;
+
+$color-textgray: $color-dimgray;
+$color-text-darkgray: $color-darkgray;
+$color-textlight: $color-gainsboro;
+
+$color-link: $color-royalblue;
+
+$color-bg: $color-lightgray;
+$color-bg-1: $color-whitesmoke;
+$color-bg-2: $color-royalblue;
+$color-bg-3: $color-dimgray;
+$color-bg-4: $color-plum;
+$color-bg-5: $color-skyblue;
+$color-bg-6: $color-lightcyan;
+
+$color-border: $color-whitesmoke;
+$color-border-2: $color-lightgray;
+$color-border-focus: $color-gainsboro;
+
+$color-border-btn: $color-dimgray;
+$color-border-btn-1: $color-whitesmoke;
+$color-border-btn-2: $color-darkgray;
+$color-border-btn-3: $color-lightgray;
+
+$color-slider-dots: $color-gainsboro;
+$color-slider-dots-active: $color-dimgray;
+
+$color-red: $color-crimson;
+$color-green: $color-mediumseagreen;
+
+/*
+ * Grid
+ *
+ */
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xll: 1400px,
+);
+
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1752px,
+);
+
+/*
+ * Space
+ *
+ */
+$space_breakpoints: (
+	null: 320px,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+);
+$space: (
+	pink: (
+		null: 4px,
+	),
+	violet: (
+		null: 8px,
+	),
+	blue: (
+		null: 16px,
+	),
+	green: (
+		null: 24px,
+	),
+	yellow: (
+		null: 32px,
+	),
+	orange: (
+		null: 48px,
+	),
+	red: (
+		null: 64px,
+	),
+);
+
+/*
+ * Animation Speed
+ *
+ */
+
+$animation-speed: 0.4s;
+
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation */
+
+/* 6 Misc */
+
+/*
+ * 	@include space(padding, top, green);
+ */

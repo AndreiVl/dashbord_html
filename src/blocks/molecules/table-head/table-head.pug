@@ -1,0 +1,5 @@
+mixin table-head(data)
+	thead.table-head(class!=data.class)
+		tr 
+			- for (var i = 0; i < data.items.length; i++)
+				th.text.text--bold!=data.items[i]['title']

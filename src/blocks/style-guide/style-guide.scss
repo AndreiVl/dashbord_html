@@ -1,0 +1,39 @@
+.style-guide__icon-list {
+	/* 2 Block model */
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0;
+	margin: 0;
+
+	/* 4 Visual */
+	list-style: none;
+}
+.style-guide__icon-item {
+	/* 2 Block model */
+	display: flex;
+	align-items: center;
+	margin: 10px 10px;
+}
+.style-guide__icon-item .icon {
+	/* 2 Block model */
+	margin-right: 5px;
+}
+.style-guide__icon-item--bg .icon {
+	/* 4 Visual */
+	background: blue;
+}
+
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation */
+
+/* 6 Misc */

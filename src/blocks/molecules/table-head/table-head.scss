@@ -1,0 +1,50 @@
+.table-head tr {
+	/* 4 Visual */
+	border-bottom: 1px solid $color-border;
+}
+.table-head th {
+	/* 2 Block model */
+	padding-top: 4px;
+	padding-right: 15px;
+	padding-bottom: 12px;
+
+	/* 3 Typography */
+	text-align: left;
+}
+.table-head th:first-child {
+	/* 2 Block model */
+	padding-left: 13px;
+}
+
+.table-head__recent-activities tr th:nth-child(1) {
+	/* 2 Block model */
+	width: 7.1429%;
+}
+.table-head__recent-activities tr th:nth-child(2) {
+	/* 2 Block model */
+	width: 21.332%;
+}
+.table-head__recent-activities tr th:nth-child(3) {
+	/* 2 Block model */
+	width: 17.0849%;
+}
+.table-head__recent-activities tr th:nth-child(5) {
+	/* 2 Block model */
+	width: 18.4362%;
+}
+.table-head__recent-activities tr th:nth-child(6) {
+	/* 2 Block model */
+	width: 12.2586%;
+}
+
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation */
+
+/* 6 Misc */

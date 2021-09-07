@@ -1,0 +1,18 @@
+doctype html
+html(lang="en")
+	include include/head.pug
+	+head('Settings')
+
+	body
+		include ../blocks/mixins.pug
+		div.wrapper
+			include ../blocks/organisms/header/header.pug
+			
+			div.body
+				include ../blocks/organisms/sidebar/sidebar.pug
+
+				main.main
+					include ../blocks/organisms/settings/settings.pug
+			div.overlay
+		
+		include include/script.pug

@@ -1,0 +1,91 @@
+.wallet-item {
+	/* 2 Block model */
+	padding-left: 24px;
+	padding-right: 24px;
+	@include space(padding, top, green);
+	@include space(padding, bottom, green);
+
+	/* 4 Visual */
+	border: 1px solid $color-border;
+	border-radius: 3px;
+}
+.wallet-item__top {
+	/* 2 Block model */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	@include space(margin, bottom, green);
+}
+.wallet-item__left {
+	/* 2 Block model */
+	display: flex;
+	align-items: center;
+
+	/* 3 Typography */
+	text-decoration: none;
+
+	/* 4 Visual */
+	outline: none;
+
+	/* 5 Animation */
+	transition: all $animation-speed;
+}
+.wallet-item__left:hover .wallet-item__title {
+	/* 3 Typography */
+	color: $color-textlight;
+}
+.wallet-item__left:focus .wallet-item__title {
+	/* 3 Typography */
+	color: $color-textlight;
+}
+.wallet-item__left:active .wallet-item__title {
+	/* 3 Typography */
+	color: $color-textlight;
+}
+.wallet-item__left .icon {
+	/* 2 Block model */
+	margin-right: 12px;
+}
+.wallet-item__title {
+	/* 5 Animation */
+	transition: all $animation-speed;
+}
+.wallet-item__body {
+	/* 2 Block model */
+	@include space(margin, bottom, yellow);
+
+	/* 3 Typography */
+	text-transform: uppercase;
+}
+.wallet-item__body span {
+	/* 2 Block model */
+	display: block;
+}
+.wallet-item__bottom {
+	/* 2 Block model */
+	display: flex;
+}
+.wallet-item__link {
+	/* 2 Block model */
+	margin-right: 24px;
+}
+.wallet-item__link:last-child {
+	/* 2 Block model */
+	margin-right: 0;
+}
+
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation */
+
+/* 6 Misc */
+
+/*
+ * 	@include space(padding, top, green);
+ */
